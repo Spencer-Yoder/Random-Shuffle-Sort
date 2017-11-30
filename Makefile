@@ -1,10 +1,4 @@
 #  Spencer Yoder
-#    Z1814808
-#    CSCI 340-2
-#
-#    I certify that this is my own work and where appropriate an extension
-#    of the starter code provided for the assignment.
-
 .DEFAULT_GOAL := shuffle.exe
 
 shuffle.o: shuffle.cc
