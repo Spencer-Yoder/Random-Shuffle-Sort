@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -22,8 +23,7 @@ int main()
   srand(time(0));
   
   ofstream myfile;
-  myfile.open ("output.csv");
-  myfile.open("output" << filecount << ".csv");
+  myfile.open("output" + to_string(filecount) + ".csv");
   
   for(int i=0; i < NUM_SIZE; i++) //Added numbers to the vector
     {
@@ -51,7 +51,7 @@ int main()
 	  count = 0;
 	  filecount++;
 	  myfile.close();
-	  myfile.open("output" << filecount << ".csv"); //Open the new file
+	  myfile.open("output" + to_string(filecount) + ".csv");//Open the new file
 	}
       count++;
     }
