@@ -46,7 +46,7 @@ int main()
       
       myfile << "\n";
       
-      if (count >= 995000) //If the file has more than 995000 line in it, Make a new file
+      if (count >= 999999) //If the file has more than 995000 line in it, Make a new file
 	{
 	  count = 0;
 	  filecount++;
