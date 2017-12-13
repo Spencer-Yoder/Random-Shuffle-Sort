@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int NUM_SIZE=10;
+int NUM_SIZE=52;
 
 int myrandom (int i)
 {
